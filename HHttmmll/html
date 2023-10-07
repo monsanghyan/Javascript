@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>초콜릿 설명</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #272727;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #4e1f0d;
+        }
+        p {
+            color: #333;
+            line-height: 1.6;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        button {
+            background-color: #e34234;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>초콜릿에 대한 이야기</h1>
+    </header>
+    <div class="container">
+        <p>
+            초콜릿은 달콤하고 감미로운 맛을 가진 과자로, 세계적으로 사랑받는 간식 중 하나입니다. 
+            초콜릿은 카카오 콩에서 추출된 카카오 버터와 설탕을 주 성분으로 합니다.
+        </p>
+        <p>
+            카카오 버터는 카카오 콩의 씨앗에서 추출되며, 초콜릿을 부드럽게 만드는 데 사용됩니다. 
+            초콜릿은 높은 칼로리와 지방 함량을 가지고 있지만, 다행히도 적당한 양으로 섭취하면
+            즐길 수 있는 건강한 간식 중 하나입니다.
+        </p>
+        <div class="image-container">
+            <img src="chocolate.jpg" alt="초콜릿 이미지">
+        </div>
+        <p>
+            초콜릿은 다양한 형태와 맛으로 제공됩니다. 다크 초콜릿, 밀크 초콜릿, 화이트 초콜릿 등 
+            다양한 종류의 초콜릿을 즐길 수 있습니다. 또한 초콜릿은 다른 재료와 함께 사용하여 
+            다양한 디저트와 음료를 만들 수 있습니다.
+        </p>
+        <button onclick="showMessage()">더 많은 정보</button>
+        <p id="more-info" style="display: none;">
+            초콜릿은 세계적으로 사랑받는 간식 중 하나로, 여러 가지 이유로 인기가 있습니다.
+            초콜릿은 기분을 개선하고 스트레스를 줄이는 데 도움이 되며, 달콤한 맛으로 많은
+            사람들에게 행복을 줍니다.
+        </p>
+    </div>
+    <script>
+        function showMessage() {
+            var moreInfo = document.getElementById("more-info");
+            moreInfo.style.display = "block";
+        }
+    </script>
+</body>
+</html>
